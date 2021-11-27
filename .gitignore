@@ -133,4 +133,4 @@ dl-model/dataset/*
 
 #pth model files
 
-dl-model/*.pth
+dl-model/model002*.pth

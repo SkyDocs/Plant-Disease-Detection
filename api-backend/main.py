@@ -1,6 +1,8 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
+from model.dl_predict import predict_disease, neuralNet
+
 import base64
 
 app = Flask("Plant Disease Detection")
@@ -14,8 +16,8 @@ def predict():
 	image = data_ret["image"]
 	image = base64.b64decode(image)
 	#predict
-	model = neuralNetwork()
-	result = predict(model, image)
+	model = neuralNet()
+	result = predict_disease(model, image)
 
 	response = {
 		result

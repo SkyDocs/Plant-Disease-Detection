@@ -6,6 +6,7 @@ from model.dl_predict import predict_disease, neuralNet
 import base64
 
 app = Flask("Plant Disease Detection")
+app.config['JSON_SORT_KEYS'] = False
 
 CORS(app)
 
@@ -19,13 +20,17 @@ def predict():
 	model = neuralNet()
 	result = predict_disease(model, image)
 
+	plant = result.split("___")[0]
+	plant_disease = " ".join((result.split("___")[1]).split("_"))
+
 	response = {
-		result
+		"Plant" : plant,
+		"Disease" : plant_disease
 	}
 
-	response = jsonify(result)
+	response = jsonify(response)
 	return response
 
 
 if __name__ == '__main__':
-	app.run(host='127.0.0.1', port=8080)
+	app.run(host='0.0.0.0', port=8080)

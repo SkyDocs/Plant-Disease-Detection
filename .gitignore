@@ -130,6 +130,7 @@ dmypy.json
 
 #dataset raw files
 dl-model/dataset/*
+dl-model/disease_dataset/*
 
 #pth model files
 

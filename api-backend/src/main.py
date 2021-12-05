@@ -10,6 +10,10 @@ app.config['JSON_SORT_KEYS'] = False
 
 CORS(app)
 
+@app.route('/', methods=['GET'])
+def main():
+	return "Plant Disease Detection by Team SkyDocs, https://github.com/SkyDocs/Plant-Disease-Detection"
+
 @app.route('/', methods=['POST'])
 
 def predict():

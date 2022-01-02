@@ -57,6 +57,16 @@ class neuralNet(nn.Module):
 
 
 
+
+def get_remedy(plant_disease):
+    with open("model/disease.json", 'r') as f:
+        remedies = json.load(f)
+
+    for key in remedies:
+        if key == plant_disease:
+            return(remedies[key])
+
+
 def predict_disease(model, image):
 	with open('model/labels.json', 'rb') as labels:
 		labels = pickle.load(labels)
@@ -76,7 +86,14 @@ def predict_disease(model, image):
 		if(value == result_idx):
 			disease = key
 			break
-
+    
+    if disease != "healthy":
+        try:
+            remedy = get_remedy(disease)
+        except:
+            remedy = "Sorry the remedy is not available"
+    else:
+        remedy = "NAN, the plant is healthy"	
 	
-	return disease
+    return disease, remedy
 

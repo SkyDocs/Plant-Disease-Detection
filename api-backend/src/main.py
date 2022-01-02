@@ -26,10 +26,12 @@ def predict():
 
 	plant = result.split("___")[0]
 	plant_disease = " ".join((result.split("___")[1]).split("_"))
+	remedy = " ".join((result,split("___")[2]).split("_"))
 
 	response = {
 		"Plant" : plant,
-		"Disease" : plant_disease
+		"Disease" : plant_disease,
+		"remedy" : remedy
 	}
 
 	response = jsonify(response)

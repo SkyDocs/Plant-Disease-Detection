@@ -134,3 +134,6 @@ dl-model/disease_dataset/*
 #pth model files
 
 dl-model/model002*.pth
+
+# tensorflow models
+*.h5

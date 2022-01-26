@@ -22,3 +22,5 @@ Here is an example of curl post request of file name `image.jpg` and server serv
 Change the ip and image location accordingly.
 
 And the reponse will be in the json format of the Plant name and disease.
+
+*__NOTE__: The trained h5 model was too big(870MiB) to push, so its kept sperate.*

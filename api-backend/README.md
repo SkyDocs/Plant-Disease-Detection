@@ -24,3 +24,5 @@ Change the ip and image location accordingly.
 And the reponse will be in the json format of the Plant name and disease.
 
 *__NOTE__: The trained h5 model was too big(870MiB) to push, so its kept sperate.*
+
+Download the trained model from [https://drive.google.com/drive/folders/1wkAUa0dKp0GbN4YMvxPuFa5ZiOoMcHyg?usp=sharing](https://drive.google.com/drive/folders/1wkAUa0dKp0GbN4YMvxPuFa5ZiOoMcHyg?usp=sharing)

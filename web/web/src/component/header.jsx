@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './header.css';
 
-/*
+
 let base64String = "";
 
 function imageUploaded(){
@@ -53,13 +53,16 @@ function SendImages(imageBase64Stringsep) {
 
 
 function Header() {
-    
-
+    const [loading, setLoading] = useState(true);
     return(
-    <div>
-
-    </div>
-    );
+<div className="title">Plant Disease Detection
+            <button>
+            Click
+            </button>
+            <input type="file" id="fileid" onChange={imageUploaded}>
+            </input>
+        </div>
+    )
 }
 
 export default Header;
@@ -81,10 +84,3 @@ export default Header;
 
 
 
-/*<div className="title">Plant Disease Detection
-            <button>
-            Click
-            </button>
-            <input type="file" id="fileid">
-            </input>
-        </div>*/

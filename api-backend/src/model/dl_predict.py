@@ -1,3 +1,5 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import io
 from PIL import Image
 import numpy as np
@@ -53,8 +55,8 @@ def predict_disease(image):
 		if item == j:
 			disease = class_names[index]
 
-	# confidence = round(100 * j, 3)
-	# print(disease, confidence)
+	confidence = round(100 * j, 3)
+	print(disease, confidence)
 
 	if "healthy" not in disease:
 		try:

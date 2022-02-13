@@ -5,7 +5,7 @@ from model.dl_predict import predict_disease
 
 import base64
 
-app = Flask("Plant Disease Detection")
+app = Flask("__name__")
 app.config['JSON_SORT_KEYS'] = False
 
 CORS(app)
@@ -33,8 +33,9 @@ def predict():
 	}
 
 	response = jsonify(response)
+	response.headers.add("Access-Control-Allow-Origin", "*")
 	return response
 
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=8080)
+	app.run(host='0.0.0.0')

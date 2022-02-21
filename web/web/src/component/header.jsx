@@ -5,7 +5,7 @@ import './header.css';
 let base64String = "";
 
 function SendImages(imageBase64Stringsep) {
-    const url = "http://127.0.0.1:5000/";
+    const url = "http://52.140.7.124/";
     let data = {"image":imageBase64Stringsep };
 
     return fetch(url, {
@@ -56,6 +56,11 @@ function imageUploaded(){
 
 function Header() {
     const [loading, setLoading] = useState(true);
+    useEffect(() => {
+    fetch('http://52.140.7.124/')
+        .then(json=>{console.log(json)});
+    }, []);
+
     return(
 <div className="title">Plant Disease Detection
             <button>

@@ -1,6 +1,6 @@
 .main{
   padding-top: 120px;
-  background-image: url("G:\Plant-Disease-Detection\web\web\src\Resources\leaf.webp");
+  background-image: url("/src/Resources/leaf.webp");
 }
 
 .input-bar{
@@ -18,12 +18,14 @@
 }
 
 .card {
-  padding-top: 50px;
+  background-color: gray;
+  padding: 50px;
 }
 .card  h1 {
   font-family: "poppins", "sans-serif";
   font-weight: 600;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 .card h5 {

@@ -93,7 +93,7 @@ function Header() {
         <div class="card" id="card">
             <div class="card-body">
                 <h1>Plant Details</h1>
-                
+        
                 <h5 class="card-title list-group-item">Plant: {loading.Plant}</h5>
                 <h5 class="card-title list-group-item">Disease: {loading.Disease}</h5>
                 <h5 class="card-title list-group-item">Remedy: {loading.remedy}</h5>

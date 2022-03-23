@@ -132,8 +132,14 @@ dl-model/dataset/*
 dl-model/disease_dataset/*
 
 #pth model files
-
-dl-model/model002*.pth
+dl-model/*.pth
 
 # tensorflow models
 *.h5
+
+# test files
+dl-model/test-files.zip
+dl-model/test-files/
+
+# conf file
+tmp.conf

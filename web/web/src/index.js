@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Header from './component/header';
+import Header from "./component/Header/header";
+import Nav from "./component/Nav/nav";
+import Team from "./component/Team/teams";
 
 ReactDOM.render(
   <React.StrictMode>
+    <Nav/>
     <Header/>
+    <Team/>
   </React.StrictMode>,
   document.getElementById('root')
 );

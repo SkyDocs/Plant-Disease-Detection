@@ -6,7 +6,7 @@ const Teams = () => {
         <div className='teams' id='teams'>
             <h1 className='head'>Team Members</h1>
             <ul class="list-group list-edit">
-                <li class="list-group-item mem-name">Avish Shah 19BCE10105</li>
+                <li class="list-group-item">Avish Shah 19BCE10105</li>
                 <li class="list-group-item">Harshit Ruwali 19BCE10113</li>
                 <li class="list-group-item">Ayushmaan Singh Rajput 19BCE10306</li>
                 <li class="list-group-item">Priyansh Saxena 19BCE10373</li>

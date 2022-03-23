@@ -14,3 +14,13 @@
     font-family: "poppins", "sans-serif";
     font-weight: 500;
 }
+
+/* ================MEDIA QUERIES (SMALL DEVICES)======================*/
+
+@media screen and (max-width: 600px) {
+    .list-edit {
+      padding-bottom: 20vh;
+    }
+  }
+  
+

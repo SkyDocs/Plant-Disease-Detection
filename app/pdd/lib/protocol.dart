@@ -8,6 +8,7 @@ import 'package:dio/dio.dart';
 Future<dynamic> sendToPredictor(imagePath) async {
   final imageBytes = File(imagePath).readAsBytesSync();
   String imageBase64 = base64Encode(imageBytes);
+  // print(imageBase64);
 
   var dio = Dio();
 

@@ -26,9 +26,9 @@ class _ResultPageState extends State<ResultPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Spacer(
-              flex: 1,
-            ),
+            // Spacer(
+            //   flex: 1,
+            // ),
             Container(
               height: 300,
               width: 350,

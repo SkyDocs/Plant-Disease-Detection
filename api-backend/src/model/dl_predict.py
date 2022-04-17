@@ -1,6 +1,7 @@
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import io
+import json
 from PIL import Image
 import numpy as np
 from tensorflow.keras.models import load_model
@@ -28,12 +29,17 @@ class_names = ['Apple___Cedar_apple_rust',
 model = load_model('model/model.h5')
 
 def get_remedy(plant_disease):
-	with open("model/disease.json", 'r') as f:
-		remedies = json.load(f)
+	print("get_remedy is trigerred")
+	f = open('model/disease.json')
+	data = json.load(f)
 
-	for key in remedies:
-		if key == plant_disease:
-			return(remedies[key])
+	for i in data:
+		print(i)
+		if(plant_disease == i):
+			return(data[i])
+
+	f.close()
+	return
 
 
 def predict_disease(image):

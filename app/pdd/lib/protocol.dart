@@ -12,7 +12,7 @@ Future<dynamic> sendToPredictor(imagePath) async {
 
   var dio = Dio();
 
-  final response = await dio.post("http://52.140.7.124/", data: {
+  final response = await dio.post("http://20.239.144.166/", data: {
     'image': imageBase64,
   });
 

@@ -4,6 +4,8 @@ Plant Disease Detection project to detect the diseases in the plants by scanning
 
 For this we are planning to develop an flutter app and a web-app, from where the users can upload the image of the leaves and get them detected. 
 
+Web was made in React.js and for App we used Flutter. For web we have tried to keep UI simple and easy to provide heathy usage experience to the user. And for app too our UI is quiet simple and efficient to provide better results as per the images uploaded to them.
+
 The images will be sent to a remote cloud sever where the neural network will detect the disease and then will return the result.
 
 

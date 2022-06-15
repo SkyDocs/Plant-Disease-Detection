@@ -1,4 +1,4 @@
-# PDD
+# *PDD*
 **Plant Disease Detection Using Deep Learning**
 
 Plant Disease Detection project to detect the diseases in the plants by scanning the images of the leaves and then passing to through the neural network to detect wether the plant is infected or not.
@@ -10,6 +10,6 @@ The images will be sent to a remote cloud sever where the neural network will de
 ## Demo
 ![Demo Video](GIF.gif)
 
-**Scan to download**
+# **Scan to download**
 
 ![QR](QR.png)

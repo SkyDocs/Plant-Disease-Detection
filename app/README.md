@@ -8,7 +8,7 @@ For this we are have developed a flutter app, from where the users can upload th
 The images will be sent to a remote cloud sever where the neural network will detect the disease and then will return the result.
 
 ## Demo
-![Demo Video](GIF.gif)
+![Demo Video](gif.gif)
 
 # **Scan to download**
 

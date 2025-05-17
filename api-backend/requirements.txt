@@ -1,5 +1,5 @@
 Flask==2.3.2
-Flask_Cors==5.0.0
+Flask_Cors==6.0.0
 numpy==1.22.0
 Pillow==10.3.0
 tensorflow==2.12.1
